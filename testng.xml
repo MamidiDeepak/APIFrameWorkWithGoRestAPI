@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.APIImplementationFramework.listeners.ReTryListener"></listener>
+    </listeners>
+    <test name="Regression">
+        <classes>
+            <class name="org.APIImplementationFramework.tests.individualTests.TestPOSTAPI"/>
+            <class name="org.APIImplementationFramework.tests.individualTests.TestGETAPI"/>
+            <class name="org.APIImplementationFramework.tests.individualTests.TestPUTAPI"/>
+            <class name="org.APIImplementationFramework.tests.individualTests.TestGETAPI"/>
+        </classes>
+    </test>
+</suite>
